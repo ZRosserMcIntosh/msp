@@ -289,7 +289,7 @@ export default function Platform() {
   const active = tabs.find((t) => t.id === activeTab)!;
 
   return (
-    <section id="platform" className="relative py-28">
+    <section id="platform" className="relative py-28 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
           <motion.p

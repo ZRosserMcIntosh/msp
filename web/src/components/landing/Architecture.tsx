@@ -57,7 +57,7 @@ const layers = [
 
 export default function Architecture() {
   return (
-    <section id="security" className="relative py-28">
+    <section id="security" className="relative py-28 overflow-hidden">
       <div className="absolute inset-0 bg-surface/20" />
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">

@@ -117,7 +117,7 @@ const item = {
 
 export default function Features() {
   return (
-    <section id="features" className="relative py-28">
+    <section id="features" className="relative py-28 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">

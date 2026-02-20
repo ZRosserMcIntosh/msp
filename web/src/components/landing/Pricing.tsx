@@ -68,7 +68,7 @@ export default function Pricing() {
   const [annual, setAnnual] = useState(true);
 
   return (
-    <section id="pricing" className="relative py-28">
+    <section id="pricing" className="relative py-28 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
           <motion.p

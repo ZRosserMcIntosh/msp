@@ -11,7 +11,7 @@ import Footer from "@/components/landing/Footer";
 
 export default function Home() {
   return (
-    <main className="relative">
+    <main className="relative w-full overflow-x-hidden">
       <Navbar />
       <Hero />
       <LogoCarousel />
