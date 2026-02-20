@@ -132,11 +132,13 @@ export default function Hero() {
               key={card.label}
               whileHover={{ y: -4, scale: 1.02 }}
               transition={{ type: "spring", stiffness: 300 }}
-              className="glass rounded-xl p-5 text-left cursor-default"
+              className="glass rounded-xl p-6 text-center sm:text-left cursor-default"
             >
-              <card.icon className="w-5 h-5 text-accent mb-3" />
-              <div className="text-sm font-semibold mb-1">{card.label}</div>
-              <div className="text-xs text-muted">{card.desc}</div>
+              <div className="flex justify-center sm:justify-start">
+                <card.icon className="w-6 h-6 text-accent mb-3" />
+              </div>
+              <div className="text-sm font-semibold mb-1.5">{card.label}</div>
+              <div className="text-xs text-muted leading-relaxed">{card.desc}</div>
             </motion.div>
           ))}
         </motion.div>

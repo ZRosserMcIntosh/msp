@@ -40,7 +40,7 @@ const tabs = [
           {["142 Active", "28 Staging", "5 Shipping"].map((s) => (
             <div key={s} className="bg-surface-light rounded-lg p-3 text-center">
               <div className="text-xs font-bold text-foreground">{s.split(" ")[0]}</div>
-              <div className="text-[10px] text-muted mt-0.5">{s.split(" ")[1]}</div>
+              <div className="text-xs text-muted mt-0.5">{s.split(" ")[1]}</div>
             </div>
           ))}
         </div>
@@ -52,7 +52,7 @@ const tabs = [
           ].map((d) => (
             <div key={d.label} className="flex items-center justify-between bg-surface-light/50 rounded-lg px-3 py-2">
               <div className="text-xs text-foreground">{d.label}</div>
-              <div className={`text-[10px] font-medium ${d.color}`}>{d.status}</div>
+              <div className={`text-xs font-medium ${d.color}`}>{d.status}</div>
             </div>
           ))}
         </div>
@@ -77,15 +77,15 @@ const tabs = [
       <div className="bg-surface rounded-xl border border-border p-4 space-y-3">
         <div className="flex items-center justify-between">
           <div className="text-xs font-medium text-purple-400">Brokerage Portal</div>
-          <div className="text-[10px] text-muted">acme-realty.com</div>
+          <div className="text-xs text-muted">acme-realty.com</div>
         </div>
         <div className="grid grid-cols-2 gap-2">
           <div className="bg-surface-light rounded-lg p-3">
-            <div className="text-[10px] text-muted">Active Listings</div>
+            <div className="text-xs text-muted">Active Listings</div>
             <div className="text-lg font-bold text-foreground">47</div>
           </div>
           <div className="bg-surface-light rounded-lg p-3">
-            <div className="text-[10px] text-muted">New Leads</div>
+            <div className="text-xs text-muted">New Leads</div>
             <div className="text-lg font-bold text-foreground">12</div>
           </div>
         </div>
@@ -98,9 +98,9 @@ const tabs = [
             <div key={l.addr} className="flex items-center justify-between bg-surface-light/50 rounded-lg px-3 py-2">
               <div>
                 <div className="text-xs text-foreground">{l.addr}</div>
-                <div className="text-[10px] text-muted">{l.price}</div>
+                <div className="text-xs text-muted">{l.price}</div>
               </div>
-              <div className="text-[10px] font-medium text-accent">{l.status}</div>
+              <div className="text-xs font-medium text-accent">{l.status}</div>
             </div>
           ))}
         </div>
@@ -127,12 +127,12 @@ const tabs = [
           <div className="text-xs font-medium text-emerald-400">Security Dashboard</div>
           <div className="flex items-center gap-1">
             <div className="w-1.5 h-1.5 rounded-full bg-success" />
-            <div className="text-[10px] text-success">All Clear</div>
+            <div className="text-xs text-success">All Clear</div>
           </div>
         </div>
         <div className="bg-surface-light rounded-lg p-3">
           <div className="flex items-center justify-between mb-2">
-            <div className="text-[10px] text-muted">Compliance Score</div>
+            <div className="text-xs text-muted">Compliance Score</div>
             <div className="text-xs font-bold text-success">98%</div>
           </div>
           <div className="w-full bg-background rounded-full h-1.5">
@@ -147,7 +147,7 @@ const tabs = [
           ].map((e) => (
             <div key={e.event} className="flex items-center justify-between bg-surface-light/50 rounded-lg px-3 py-2">
               <div className="text-xs text-foreground">{e.event}</div>
-              <div className="text-[10px] text-muted">{e.time}</div>
+              <div className="text-xs text-muted">{e.time}</div>
             </div>
           ))}
         </div>
@@ -172,11 +172,11 @@ const tabs = [
       <div className="bg-surface rounded-xl border border-border p-4 space-y-3">
         <div className="flex items-center justify-between">
           <div className="text-xs font-medium text-amber-400">Document Vault</div>
-          <div className="text-[10px] text-muted">124 GB / 250 GB</div>
+          <div className="text-xs text-muted">124 GB / 250 GB</div>
         </div>
         <div className="bg-surface-light rounded-lg p-3">
           <div className="flex items-center justify-between mb-2">
-            <div className="text-[10px] text-muted">Storage Usage</div>
+            <div className="text-xs text-muted">Storage Usage</div>
             <div className="text-xs font-medium text-amber-400">49.6%</div>
           </div>
           <div className="w-full bg-background rounded-full h-1.5">
@@ -192,8 +192,8 @@ const tabs = [
             <div key={d.name} className="flex items-center justify-between bg-surface-light/50 rounded-lg px-3 py-2">
               <div className="text-xs text-foreground">{d.name}</div>
               <div className="flex items-center gap-2">
-                <div className="text-[10px] text-muted">{d.size}</div>
-                {d.signed && <div className="text-[10px] text-success">✓ Signed</div>}
+                <div className="text-xs text-muted">{d.size}</div>
+                {d.signed && <div className="text-xs text-success">✓ Signed</div>}
               </div>
             </div>
           ))}
@@ -219,7 +219,7 @@ const tabs = [
       <div className="bg-surface rounded-xl border border-border p-4 space-y-3">
         <div className="flex items-center justify-between">
           <div className="text-xs font-medium text-cyan-400">Team Management</div>
-          <div className="text-[10px] text-muted">3 teams · 24 agents</div>
+          <div className="text-xs text-muted">3 teams · 24 agents</div>
         </div>
         <div className="space-y-1.5">
           {[
@@ -230,11 +230,11 @@ const tabs = [
             <div key={t.team} className="bg-surface-light/50 rounded-lg px-3 py-2.5">
               <div className="flex items-center justify-between mb-1">
                 <div className="text-xs font-medium text-foreground">{t.team}</div>
-                <div className="text-[10px] text-muted">{t.members} members</div>
+                <div className="text-xs text-muted">{t.members} members</div>
               </div>
               <div className="flex items-center gap-1">
                 <div className="w-1.5 h-1.5 rounded-full bg-success" />
-                <div className="text-[10px] text-success">{t.online} online</div>
+                <div className="text-xs text-success">{t.online} online</div>
               </div>
             </div>
           ))}
@@ -260,10 +260,10 @@ const tabs = [
       <div className="bg-surface rounded-xl border border-border p-4 space-y-3">
         <div className="flex items-center justify-between">
           <div className="text-xs font-medium text-green-400">Billing Overview</div>
-          <div className="text-[10px] text-success">All current</div>
+          <div className="text-xs text-success">All current</div>
         </div>
         <div className="bg-surface-light rounded-lg p-3">
-          <div className="text-[10px] text-muted">Monthly Recurring</div>
+          <div className="text-xs text-muted">Monthly Recurring</div>
           <div className="text-xl font-bold text-foreground">$2,847<span className="text-xs text-muted font-normal">/mo</span></div>
         </div>
         <div className="grid grid-cols-2 gap-2">
@@ -274,7 +274,7 @@ const tabs = [
             { label: "Domains", value: "3" },
           ].map((s) => (
             <div key={s.label} className="bg-surface-light/50 rounded-lg px-3 py-2">
-              <div className="text-[10px] text-muted">{s.label}</div>
+              <div className="text-xs text-muted">{s.label}</div>
               <div className="text-xs font-bold text-foreground">{s.value}</div>
             </div>
           ))}
@@ -322,19 +322,20 @@ export default function Platform() {
         </div>
 
         {/* Tab bar */}
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-12">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+              className={`flex items-center gap-2 px-4 py-2.5 sm:px-5 sm:py-2.5 rounded-xl text-sm font-medium transition-all ${
                 activeTab === tab.id
                   ? "bg-accent text-white shadow-lg shadow-accent/20"
                   : "text-muted hover:text-foreground hover:bg-surface-light/50 border border-border/50"
               }`}
             >
               <tab.icon className="w-4 h-4" />
-              {tab.label}
+              <span className="hidden sm:inline">{tab.label}</span>
+              <span className="sm:hidden">{tab.label.split(" ")[0]}</span>
             </button>
           ))}
         </div>
@@ -347,13 +348,13 @@ export default function Platform() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
+            className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center"
           >
             {/* Text */}
-            <div>
-              <h3 className="text-2xl font-bold mb-4">{active.title}</h3>
-              <p className="text-muted mb-6 leading-relaxed">{active.desc}</p>
-              <ul className="space-y-2.5">
+            <div className="text-center lg:text-left">
+              <h3 className="text-2xl sm:text-3xl font-bold mb-4">{active.title}</h3>
+              <p className="text-muted mb-6 leading-relaxed text-sm sm:text-base">{active.desc}</p>
+              <ul className="space-y-3 inline-block text-left">
                 {active.features.map((f) => (
                   <li key={f} className="flex items-start gap-2.5">
                     <div className="w-5 h-5 rounded-full bg-accent/10 flex items-center justify-center mt-0.5 shrink-0">

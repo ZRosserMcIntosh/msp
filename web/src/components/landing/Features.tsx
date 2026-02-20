@@ -156,22 +156,22 @@ export default function Features() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-60px" }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5"
         >
           {features.map((feat) => (
             <motion.div
               key={feat.title}
               variants={item}
               whileHover={{ y: -4, scale: 1.01 }}
-              className="group relative rounded-xl border border-border/60 bg-surface/40 p-6 hover:border-accent/30 hover:bg-surface/60 transition-all duration-300 cursor-default"
+              className="group relative rounded-xl border border-border/60 bg-surface/40 p-6 sm:p-7 hover:border-accent/30 hover:bg-surface/60 transition-all duration-300 cursor-default"
             >
               <div
-                className={`w-10 h-10 rounded-lg ${feat.bg} flex items-center justify-center mb-4`}
+                className={`w-11 h-11 rounded-lg ${feat.bg} flex items-center justify-center mb-4`}
               >
                 <feat.icon className={`w-5 h-5 ${feat.color}`} />
               </div>
-              <h3 className="text-sm font-semibold mb-2">{feat.title}</h3>
-              <p className="text-xs text-muted leading-relaxed">{feat.desc}</p>
+              <h3 className="text-sm sm:text-base font-semibold mb-2">{feat.title}</h3>
+              <p className="text-xs sm:text-sm text-muted leading-relaxed">{feat.desc}</p>
 
               {/* Hover glow */}
               <div className="absolute inset-0 rounded-xl bg-accent/[0.02] opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />

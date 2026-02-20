@@ -100,18 +100,18 @@ export default function Architecture() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
               whileHover={{ scale: 1.01 }}
-              className={`flex items-center gap-5 rounded-xl border ${layer.color} bg-surface/40 p-5 backdrop-blur-sm transition-all hover:bg-surface/60`}
+              className={`flex items-center gap-5 rounded-xl border ${layer.color} bg-surface/40 p-5 sm:p-6 backdrop-blur-sm transition-all hover:bg-surface/60`}
             >
               <div className="shrink-0">
-                <layer.icon className={`w-6 h-6 ${layer.iconColor}`} />
+                <layer.icon className={`w-7 h-7 ${layer.iconColor}`} />
               </div>
               <div className="flex-1 min-w-0">
-                <div className="text-sm font-semibold mb-1.5">{layer.label}</div>
+                <div className="text-sm sm:text-base font-semibold mb-2">{layer.label}</div>
                 <div className="flex flex-wrap gap-2">
                   {layer.items.map((item) => (
                     <span
                       key={item}
-                      className="text-[11px] text-muted bg-background/60 px-2 py-0.5 rounded-md border border-border/50"
+                      className="text-xs text-muted bg-background/60 px-2.5 py-1 rounded-md border border-border/50"
                     >
                       {item}
                     </span>

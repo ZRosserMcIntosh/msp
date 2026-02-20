@@ -104,13 +104,14 @@ export default function Pricing() {
             <span className={`text-sm ${!annual ? "text-foreground" : "text-muted"}`}>Monthly</span>
             <button
               onClick={() => setAnnual(!annual)}
-              className={`relative w-12 h-6 rounded-full transition-colors ${
+              aria-label="Toggle annual billing"
+              className={`relative w-14 h-7 rounded-full transition-colors ${
                 annual ? "bg-accent" : "bg-surface-light"
               }`}
             >
               <div
-                className={`absolute top-1 w-4 h-4 rounded-full bg-white transition-transform ${
-                  annual ? "translate-x-7" : "translate-x-1"
+                className={`absolute top-1 w-5 h-5 rounded-full bg-white transition-transform ${
+                  annual ? "translate-x-8" : "translate-x-1"
                 }`}
               />
             </button>
@@ -131,7 +132,7 @@ export default function Pricing() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
               whileHover={{ y: -4 }}
-              className={`relative rounded-2xl p-6 ${
+              className={`relative rounded-2xl p-7 sm:p-8 ${
                 plan.highlight
                   ? "border-2 border-accent bg-surface/60 shadow-xl shadow-accent/5"
                   : "border border-border bg-surface/30"
@@ -143,11 +144,11 @@ export default function Pricing() {
                 </div>
               )}
 
-              <h3 className="text-lg font-bold mb-1">{plan.name}</h3>
-              <p className="text-xs text-muted mb-5">{plan.desc}</p>
+              <h3 className="text-xl font-bold mb-1">{plan.name}</h3>
+              <p className="text-sm text-muted mb-5">{plan.desc}</p>
 
               <div className="flex items-baseline gap-1 mb-6">
-                <span className="text-4xl font-bold">
+                <span className="text-4xl sm:text-5xl font-bold">
                   ${annual ? plan.price.annual : plan.price.monthly}
                 </span>
                 <span className="text-sm text-muted">/{plan.unit}</span>
@@ -155,7 +156,7 @@ export default function Pricing() {
 
               <a
                 href="#"
-                className={`block text-center py-2.5 rounded-xl text-sm font-medium transition-all mb-6 ${
+                className={`block text-center py-3 rounded-xl text-sm font-medium transition-all mb-6 ${
                   plan.highlight
                     ? "bg-accent hover:bg-accent-light text-white shadow-lg shadow-accent/20"
                     : "border border-border hover:border-accent/50 text-foreground hover:bg-surface-light"
@@ -164,11 +165,11 @@ export default function Pricing() {
                 Get Started
               </a>
 
-              <ul className="space-y-2.5">
+              <ul className="space-y-3">
                 {plan.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2">
+                  <li key={f} className="flex items-start gap-2.5">
                     <Check className="w-4 h-4 text-accent shrink-0 mt-0.5" />
-                    <span className="text-xs text-muted">{f}</span>
+                    <span className="text-sm text-muted">{f}</span>
                   </li>
                 ))}
               </ul>

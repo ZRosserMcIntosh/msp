@@ -105,9 +105,9 @@ export default function Pipeline() {
                 {/* Node */}
                 <motion.div
                   whileHover={{ scale: 1.1 }}
-                  className={`relative z-10 w-14 h-14 rounded-2xl ${stage.color} flex items-center justify-center shadow-lg mb-4`}
+                  className={`relative z-10 w-16 h-16 rounded-2xl ${stage.color} flex items-center justify-center shadow-lg mb-4`}
                 >
-                  <stage.icon className="w-6 h-6 text-white" />
+                  <stage.icon className="w-7 h-7 text-white" />
                 </motion.div>
 
                 {/* Arrow */}
@@ -117,8 +117,8 @@ export default function Pipeline() {
                   </div>
                 )}
 
-                <h3 className="text-sm font-semibold mb-1">{stage.label}</h3>
-                <p className="text-xs text-muted text-center">{stage.desc}</p>
+                <h3 className="text-sm sm:text-base font-semibold mb-1">{stage.label}</h3>
+                <p className="text-xs sm:text-sm text-muted text-center">{stage.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -142,10 +142,10 @@ export default function Pipeline() {
               key={stat.label}
               className="glass rounded-xl p-6 text-center"
             >
-              <div className="text-2xl sm:text-3xl font-bold text-accent mb-1">
+              <div className="text-3xl sm:text-4xl font-bold text-accent mb-1">
                 {stat.value}
               </div>
-              <div className="text-xs text-muted">{stat.label}</div>
+              <div className="text-xs sm:text-sm text-muted">{stat.label}</div>
             </div>
           ))}
         </motion.div>

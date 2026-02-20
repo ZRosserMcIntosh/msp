@@ -113,13 +113,13 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-3">
             <a
               href="#"
-              className="text-sm text-muted hover:text-foreground transition-colors px-3 py-2"
+              className="text-sm text-muted hover:text-foreground transition-colors px-4 py-2.5"
             >
               Sign In
             </a>
             <a
               href="#"
-              className="text-sm font-medium bg-accent hover:bg-accent-light text-white px-4 py-2 rounded-lg transition-all hover:shadow-lg hover:shadow-accent/20"
+              className="text-sm font-medium bg-accent hover:bg-accent-light text-white px-5 py-2.5 rounded-lg transition-all hover:shadow-lg hover:shadow-accent/20"
             >
               Get Started
             </a>
@@ -164,7 +164,7 @@ export default function Navbar() {
               </a>
               <a
                 href="#"
-                className="text-sm font-medium bg-accent hover:bg-accent-light text-white px-6 py-3 rounded-lg transition-all"
+                className="text-base font-medium bg-accent hover:bg-accent-light text-white px-8 py-3.5 rounded-xl transition-all w-full max-w-xs text-center"
               >
                 Get Started
               </a>
