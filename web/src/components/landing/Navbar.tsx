@@ -112,13 +112,13 @@ export default function Navbar() {
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="#"
+              href="/login"
               className="text-sm text-muted hover:text-foreground transition-colors px-4 py-2.5"
             >
               Sign In
             </a>
             <a
-              href="#"
+              href="/login"
               className="text-sm font-medium bg-accent hover:bg-accent-light text-white px-5 py-2.5 rounded-lg transition-all hover:shadow-lg hover:shadow-accent/20"
             >
               Get Started
@@ -157,13 +157,13 @@ export default function Navbar() {
               ))}
               <div className="h-px w-full max-w-xs bg-border my-2" />
               <a
-                href="#"
+                href="/login"
                 className="text-lg text-muted hover:text-foreground transition-colors"
               >
                 Sign In
               </a>
               <a
-                href="#"
+                href="/login"
                 className="text-base font-medium bg-accent hover:bg-accent-light text-white px-8 py-3.5 rounded-xl transition-all w-full max-w-xs text-center"
               >
                 Get Started

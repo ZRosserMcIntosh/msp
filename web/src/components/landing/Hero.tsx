@@ -90,7 +90,7 @@ export default function Hero() {
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
         >
           <a
-            href="#"
+            href="/login"
             className="group relative inline-flex items-center gap-2 bg-accent hover:bg-accent-light text-white font-medium px-7 py-3.5 rounded-xl transition-all duration-300 hover:shadow-xl hover:shadow-accent/25 hover:-translate-y-0.5"
           >
             Start Building
